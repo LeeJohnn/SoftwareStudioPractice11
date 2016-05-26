@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 sendName();
             }
         });
+        //123456
 
     }
 
