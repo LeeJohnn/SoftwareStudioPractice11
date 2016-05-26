@@ -3,6 +3,7 @@ package com.csclab.softwarestudiopractice11;
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
@@ -56,10 +57,9 @@ public class Activity2 extends Activity{
                     break;
                 case MotionEvent.ACTION_MOVE: //ACTION_MOVE
                     mx = (int)(event.getRawX() - x);
-                    my = (int)(event.getRawY() - 80 - y);
+                    my = (int)(event.getRawY() - y);
                     v.layout(mx, my, mx+v.getWidth(), my+v.getHeight());
                     break;
-
             }
             return true;
         }
