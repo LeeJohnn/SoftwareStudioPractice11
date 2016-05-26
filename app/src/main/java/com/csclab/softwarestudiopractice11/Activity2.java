@@ -56,7 +56,7 @@ public class Activity2 extends Activity{
                     break;
                 case MotionEvent.ACTION_MOVE: //ACTION_MOVE
                     mx = (int)(event.getRawX() - x);
-                    my = (int)(event.getRawY() - y);
+                    my = (int)(event.getRawY() - 80 - y);
                     v.layout(mx, my, mx+v.getWidth(), my+v.getHeight());
                     break;
 
